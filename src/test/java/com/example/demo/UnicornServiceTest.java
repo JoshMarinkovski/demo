@@ -69,7 +69,6 @@ public class UnicornServiceTest {
 
     @Test
     void testUpdateUnicorn() {
-        System.out.println("HEYYYYYYYYYYY");
         Long id = 1L;
         Unicorn unicorn = new Unicorn(null,"Sparkle Princess", "White", 104, "Gold", "Sapphire", 94, "cm", 104, "kg", new ArrayList<>());
         when(unicornRepository.findById(id)).thenReturn(Optional.of(unicorn));
